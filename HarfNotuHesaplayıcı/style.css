@@ -1,0 +1,212 @@
+/* Genel sayfa düzeni */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+        
+    
+}
+
+/* Form düzeni */
+#form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Başlık düzeni */
+#form h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Giriş alanları (input) */
+input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Hesapla buton stili */
+input[type="button"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+/* Sonuç ve harf notu kısmı */
+#notGoster {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Sonuç kısmı - dinamik olarak stil uygulanacak */
+#sonuc {
+    color: #333;
+}
+
+/* Harf notu kısmı - dinamik olarak stil uygulanacak */
+#harfNot {
+    color: #333;
+}
+
+/* Harf notları için animasyonlar */
+@keyframes pulseA {
+    0% {
+        transform: scale(1);
+        color: green;
+    }
+    50% {
+        transform: scale(1.2);
+        color: #4CAF50; /* Daha parlak yeşil */
+    }
+    100% {
+        transform: scale(1);
+        color: green;
+    }
+}
+
+@keyframes pulseB {
+    0% {
+        transform: scale(1);
+        color: blue;
+    }
+    50% {
+        transform: scale(1.2);
+        color: #4A90E2; /* Daha parlak mavi */
+    }
+    100% {
+        transform: scale(1);
+        color: blue;
+    }
+}
+
+@keyframes pulseC {
+    0% {
+        transform: scale(1);
+        color: orange;
+    }
+    50% {
+        transform: scale(1.2);
+        color: #FFA500; /* Daha parlak turuncu */
+    }
+    100% {
+        transform: scale(1);
+        color: orange;
+    }
+}
+
+@keyframes pulseD {
+    0% {
+        transform: scale(1);
+        color: red;
+    }
+    50% {
+        transform: scale(1.2);
+        color: #E74C3C; /* Daha parlak kırmızı */
+    }
+    100% {
+        transform: scale(1);
+        color: red;
+    }
+}
+
+@keyframes pulseE{
+    0% {
+        transform: scale(1);
+        color: gray;
+    }
+    50% {
+        transform: scale(1.2);
+        color: rgb(255, 255, 255); 
+    }
+    100% {
+        transform: scale(1);
+        color: gray;
+    }
+}
+@keyframes pulseFX {
+    0% {
+        transform: scale(1);
+        color: darkred;
+    }
+    50% {
+        transform: scale(1.2);
+        color: #d45c4f; 
+    }
+    100% {
+        transform: scale(1);
+        color: darkred;
+    }
+}
+
+@keyframes pulseF {
+    0% {
+        transform: scale(1);
+        color: #424242;
+    }
+    50% {
+        transform: scale(1.2);
+        color: #666161; 
+    }
+    100% {
+        transform: scale(1);
+        color: #424242;
+    }
+}
+
+/* Her bir harf notu için animasyon sınıfları */
+.pulseA {
+    animation: pulseA 1s ease-in-out infinite;
+}
+
+.pulseB {
+    animation: pulseB 1s ease-in-out infinite;
+}
+
+.pulseC {
+    animation: pulseC 1s ease-in-out infinite;
+}
+
+.pulseD {
+    animation: pulseD 1s ease-in-out infinite;
+}
+
+.pulseF {
+    animation: pulseF 1s ease-in-out infinite;
+}
+
+/* Error mesajı (gerektiğinde) */
+#errorMessage {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
